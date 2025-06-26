@@ -102,7 +102,7 @@ function AppContent() {
 
   return (
     <div className="flex min-h-screen flex-col">
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-green-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-green-950/20 text-gray-900 dark:text-gray-100 theme-transition">
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-purple-50/30 dark:from-gray-950 dark:via-gray-900 dark:to-purple-950/20 text-gray-900 dark:text-gray-100 theme-transition">
         {/* Header */}
         <motion.header
           initial={{ y: -100 }}
@@ -115,7 +115,7 @@ function AppContent() {
               <motion.div
                 whileHover={{ rotate: 5, scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                className="h-10 w-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg glow-effect"
+                className="h-10 w-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg glow-effect"
               >
                 <Brain className="h-5 w-5 text-white" />
               </motion.div>
@@ -129,10 +129,10 @@ function AppContent() {
                 <a
                   key={item}
                   href={`#${item.toLowerCase().replace(" ", "-")}`}
-                  className="text-sm font-medium theme-transition hover:text-green-500 dark:hover:text-green-400 relative group"
+                  className="text-sm font-medium theme-transition hover:text-pink-500 dark:hover:text-pink-400 relative group"
                 >
                   {item}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-green-500 to-emerald-600 theme-transition group-hover:w-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-purple-600 theme-transition group-hover:w-full"></span>
                 </a>
               ))}
             </nav>
@@ -189,7 +189,7 @@ function AppContent() {
             >
               <div className="w-full px-6 flex h-16 items-center justify-between max-w-none">
                 <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg">
+                  <div className="h-10 w-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
                     <Brain className="h-5 w-5 text-white" />
                   </div>
                   <span className="font-bold text-xl gradient-text">
@@ -259,10 +259,10 @@ function AppContent() {
         <main className="flex-1">
           {/* Hero Section */}
           <section className="relative overflow-hidden py-20 md:py-32 w-full">
-            <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 via-emerald-500/10 to-teal-500/10 opacity-50 dark:opacity-30" />
+            <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-blue-500/10 opacity-50 dark:opacity-30" />
             <div className="absolute inset-0">
-              <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-green-500/20 dark:bg-green-500/10 mix-blend-normal filter blur-[128px] animate-pulse animation-delay-200" />
-              <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-emerald-500/20 dark:bg-emerald-500/10 mix-blend-normal filter blur-[128px] animate-pulse animation-delay-800" />
+              <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-pink-500/20 dark:bg-pink-500/10 mix-blend-normal filter blur-[128px] animate-pulse animation-delay-200" />
+              <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/20 dark:bg-purple-500/10 mix-blend-normal filter blur-[128px] animate-pulse animation-delay-800" />
             </div>
             
             <div className="w-full px-6 relative z-10 max-w-none">
@@ -273,7 +273,7 @@ function AppContent() {
                   transition={{ duration: 0.5 }}
                   className="mb-6 inline-flex items-center glass-effect px-4 py-2 text-sm rounded-full"
                 >
-                  <Sparkles className="mr-2 h-4 w-4 text-green-500" />
+                  <Sparkles className="mr-2 h-4 w-4 text-pink-500" />
                   Your Learning Companion
                 </motion.div>
                 
@@ -327,7 +327,7 @@ function AppContent() {
                   viewport={{ once: true }}
                   className="mb-6 inline-flex items-center glass-effect px-4 py-2 text-sm rounded-full"
                 >
-                  <Zap className="mr-2 h-4 w-4 text-green-500" />
+                  <Zap className="mr-2 h-4 w-4 text-pink-500" />
                   Why Rafiq?
                 </motion.div>
                 
@@ -376,7 +376,7 @@ function AppContent() {
           </ScrollRevealSection>
 
           {/* AI Features Section */}
-          <ScrollRevealSection className="py-20 md:py-32 bg-gradient-to-br from-emerald-50/50 to-green-50/50 dark:from-emerald-950/20 dark:to-green-950/20 w-full theme-transition">
+          <ScrollRevealSection className="py-20 md:py-32 bg-gradient-to-br from-purple-50/50 to-pink-50/50 dark:from-purple-950/20 dark:to-pink-950/20 w-full theme-transition">
             <div className="w-full px-6 max-w-none">
               <div className="mx-auto max-w-4xl text-center mb-16">
                 <motion.div
@@ -386,7 +386,7 @@ function AppContent() {
                   viewport={{ once: true }}
                   className="mb-6 inline-flex items-center glass-effect px-4 py-2 text-sm rounded-full"
                 >
-                  <Brain className="mr-2 h-4 w-4 text-emerald-500" />
+                  <Brain className="mr-2 h-4 w-4 text-purple-500" />
                   AI That Understands You
                 </motion.div>
                 
@@ -491,7 +491,7 @@ function AppContent() {
                         viewport={{ once: true }}
                         className="flex items-center gap-3"
                       >
-                        <div className="h-2 w-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full" />
+                        <div className="h-2 w-2 bg-gradient-to-r from-green-500 to-blue-500 rounded-full" />
                         <span className="text-gray-900 dark:text-gray-100 theme-transition">{feature}</span>
                       </motion.div>
                     ))}
@@ -507,7 +507,7 @@ function AppContent() {
                 >
                   <div className="glass-effect p-8 rounded-2xl hover-lift">
                     <div className="mb-6 flex items-center gap-3">
-                      <div className="h-12 w-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg">
+                      <div className="h-12 w-12 bg-gradient-to-br from-green-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
                         <LineChart className="h-6 w-6 text-white" />
                       </div>
                       <div>
@@ -536,7 +536,7 @@ function AppContent() {
           </ScrollRevealSection>
 
           {/* For Parents Section */}
-          <ScrollRevealSection className="py-20 md:py-32 bg-gradient-to-br from-green-50/50 to-emerald-50/50 dark:from-green-950/20 dark:to-emerald-950/20 w-full theme-transition" id="for-parents">
+          <ScrollRevealSection className="py-20 md:py-32 bg-gradient-to-br from-pink-50/50 to-purple-50/50 dark:from-pink-950/20 dark:to-purple-950/20 w-full theme-transition" id="for-parents">
             <div className="w-full px-6 max-w-none">
               <div className="mx-auto max-w-4xl text-center mb-16">
                 <motion.div
@@ -546,7 +546,7 @@ function AppContent() {
                   viewport={{ once: true }}
                   className="mb-6 inline-flex items-center glass-effect px-4 py-2 text-sm rounded-full"
                 >
-                  <Heart className="mr-2 h-4 w-4 text-green-500" />
+                  <Heart className="mr-2 h-4 w-4 text-pink-500" />
                   For Parents – Introducing Family Snaps
                 </motion.div>
                 
@@ -588,7 +588,7 @@ function AppContent() {
                     <Card className="glass-effect hover:glass-effect-strong theme-transition hover-lift overflow-hidden">
                       <CardHeader className="pb-4">
                         <div className="flex items-center gap-3">
-                          <div className="h-12 w-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                          <div className="h-12 w-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg">
                             {child.name.charAt(0)}
                           </div>
                           <div>
@@ -604,7 +604,7 @@ function AppContent() {
                         </div>
                         <div className="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full theme-transition">
                           <div 
-                            className="bg-gradient-to-r from-green-500 to-emerald-600 h-2 rounded-full theme-transition" 
+                            className="bg-gradient-to-r from-pink-500 to-purple-600 h-2 rounded-full theme-transition" 
                             style={{ width: `${child.progress}%` }}
                           />
                         </div>
@@ -646,7 +646,7 @@ function AppContent() {
           </ScrollRevealSection>
 
           {/* Testimonials */}
-          <ScrollRevealSection className="py-20 md:py-32 bg-gradient-to-br from-emerald-50/50 to-green-50/50 dark:from-emerald-950/20 dark:to-green-950/20 w-full theme-transition">
+          <ScrollRevealSection className="py-20 md:py-32 bg-gradient-to-br from-purple-50/50 to-pink-50/50 dark:from-purple-950/20 dark:to-pink-950/20 w-full theme-transition">
             <div className="w-full px-6 max-w-none">
               <div className="mx-auto max-w-4xl text-center mb-16">
                 <motion.div
@@ -760,7 +760,7 @@ function AppContent() {
           </ScrollRevealSection>
 
           {/* Contact Section */}
-          <ScrollRevealSection className="py-20 md:py-32 bg-gradient-to-br from-emerald-50/50 to-green-50/50 dark:from-emerald-950/20 dark:to-green-950/20 w-full theme-transition" id="contact">
+          <ScrollRevealSection className="py-20 md:py-32 bg-gradient-to-br from-purple-50/50 to-pink-50/50 dark:from-purple-950/20 dark:to-pink-950/20 w-full theme-transition" id="contact">
             <div className="w-full px-6 max-w-none">
               <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 max-w-7xl mx-auto">
                 <motion.div
@@ -770,7 +770,7 @@ function AppContent() {
                   viewport={{ once: true }}
                 >
                   <div className="mb-6 inline-flex items-center glass-effect px-4 py-2 text-sm rounded-full">
-                    <Mail className="mr-2 h-4 w-4 text-green-500" />
+                    <Mail className="mr-2 h-4 w-4 text-pink-500" />
                     Get in Touch
                   </div>
                   
@@ -784,7 +784,7 @@ function AppContent() {
                   
                   <div className="space-y-6">
                     <div className="flex items-center gap-4">
-                      <div className="h-12 w-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg">
+                      <div className="h-12 w-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
                         <Mail className="h-6 w-6 text-white" />
                       </div>
                       <div>
@@ -794,7 +794,7 @@ function AppContent() {
                     </div>
                     
                     <div className="flex items-center gap-4">
-                      <div className="h-12 w-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg">
+                      <div className="h-12 w-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
                         <Phone className="h-6 w-6 text-white" />
                       </div>
                       <div>
@@ -846,7 +846,7 @@ function AppContent() {
                           <label htmlFor="role" className="block text-sm font-medium mb-2 text-gray-900 dark:text-gray-100 theme-transition">
                             I am a...
                           </label>
-                          <select className="w-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-3 py-2 text-sm text-gray-900 dark:text-gray-100 rounded-xl theme-transition focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                          <select className="w-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-3 py-2 text-sm text-gray-900 dark:text-gray-100 rounded-xl theme-transition focus:ring-2 focus:ring-pink-500 focus:border-transparent">
                             <option>Student</option>
                             <option>Teacher</option>
                             <option>Parent</option>
@@ -883,7 +883,7 @@ function AppContent() {
             <div className="grid gap-8 md:grid-cols-4 max-w-7xl mx-auto">
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg">
+                  <div className="h-10 w-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
                     <Brain className="h-5 w-5 text-white" />
                   </div>
                   <span className="font-bold text-xl gradient-text">
